@@ -14,7 +14,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">CMD Progress</a>
+          <a class="navbar-brand" href="#">Camera Diagnostics Progress</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -26,14 +26,21 @@
     <div class="container">
 
         <div id="main">
-            <h1>Click a button to begin</h1>
+            <h1>Camera Diagnostics Page</h1>
             
             <button class="btn btn-primary test-btn" data-command="test1">
-                Test 1
+                Run Diagnostic Test 1
+                <br>
             </button>
             <button class="btn btn-info test-btn" data-command="test2">
-                Test 2
+                Run Diagnostic Test 2
             </button>
+            <button class="btn btn-info test-btn" data-command="test3">
+                Run Diagnostic Test 3
+            </button>
+            <button class="btn btn-info test-btn" data-command="test4">
+                Run Diagnostic Test 4
+            </button>  
         </div>
         
         <div class="row">
@@ -54,4 +61,32 @@
     
     <script src="/static/js/client.js"></script>
 </body>
+
+<head>
+    <p> </p>
+    <p> </p>
+
+    <title>Video Test Page</title>
+    
+    <link rel="stylesheet" href="../css/main.css">
+      <style>
+        video {
+          object-fit: cover;
+        }
+        @media (min-width: 1000px) {
+          video {
+            height: 480px;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <div id="container">
+        <h1><a href="../index.html" title=" Video Test Page"></a> Video Test Page</h1>
+        <video autoplay playsinline></video>
+        </div>
+        <script src="static/js/main.js"></script>
+    </body>
+    </html>
+
 </html>
